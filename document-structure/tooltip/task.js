@@ -6,7 +6,7 @@ window.onload = function() {
 		element.onclick = function() {
 			let hint = document.querySelector('.tooltip');
 			hint.innerText = event.currentTarget.getAttribute('title');
-			hint.classList.add('tooltip_active');
+			hint.classList.toggle('tooltip_active');
 			hint.style.left = event.currentTarget.getBoundingClientRect().left + 'px';
 			hint.style.top = event.currentTarget.getBoundingClientRect().bottom + 'px';
 			return false;
